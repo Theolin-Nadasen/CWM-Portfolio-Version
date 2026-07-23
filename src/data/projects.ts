@@ -140,6 +140,51 @@ If you have any questions about this Privacy Policy, please contact us at: theol
 Consent
 By using Card Squads, you consent to our Privacy Policy and agree to its terms.`
     }
+  },
+  {
+    id: "prism-chain",
+    name: "Prism Chain",
+    description: "A fully offline puzzle game where players complete levels and earn crystals. No internet connection required and no data is ever collected.",
+    image: "/prism_chain_icon.png",
+    tags: ["Game", "Puzzle", "Mobile App", "Android"],
+    hasDetailPage: true,
+    hasPrivacyPolicy: true,
+    detailContent: {
+      overview: "Prism Chain is a fully offline puzzle game. The app does not collect, store, transmit, or share any personal data. No internet connection is required to play, ensuring complete privacy while you play.",
+      features: [
+        "Complete levels and track high scores",
+        "Earn and spend crystals",
+        "Game progress saved locally on your device",
+        "Fully offline - no internet connection required",
+        "No data collection - complete privacy",
+        "No third-party SDKs or tracking"
+      ],
+      technologies: ["Flutter"],
+      privacyPolicy: `Privacy Policy for Prism Chain
+
+Last updated: July 23, 2026
+
+Overview
+Prism Chain ("the App") is a fully offline puzzle game. The App does not collect, store, transmit, or share any personal data. No internet connection is required to play.
+
+Data Collection
+The App collects no data whatsoever. No personal information (name, email, address, etc.), no device identifiers (IMEI, advertising ID, etc.), no location data, no usage analytics or crash logs sent off-device, no cookies or tracking technologies, and no third-party SDKs that collect data.
+
+Local Storage
+The App uses SharedPreferences (Android) to save game progress locally on your device — including completed levels, high scores, crystal balance, and settings. This data never leaves your device. You can clear it at any time via your device's App Settings.
+
+Third-Party Services
+The App contains no third-party analytics, advertising, crash reporting, or social media SDKs.
+
+Children's Privacy
+The App does not collect any data from anyone, including children under 13.
+
+Changes to This Policy
+If this policy changes, the "Last updated" date at the top will be revised. Since the App collects no data, any future changes would be minimal and would not affect your privacy negatively.
+
+Contact
+If you have questions about this privacy policy, please contact us at: theolin.nadasen@gmail.com`
+    }
   }
 ];
 
