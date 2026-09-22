@@ -144,40 +144,45 @@ By using Card Squads, you consent to our Privacy Policy and agree to its terms.`
   {
     id: "prism-chain",
     name: "Prism Chain",
-    description: "A fully offline puzzle game where players complete levels and earn crystals. No internet connection required and no data is ever collected.",
+    description: "A fully offline puzzle game with optional in-app purchases. No internet connection is required and no personal data is ever collected.",
     image: "/prism_chain_icon.png",
-    tags: ["Game", "Puzzle", "Mobile App", "Android"],
+    tags: ["Game", "Puzzle", "Mobile App", "Android", "In-App Purchases"],
     hasDetailPage: true,
     hasPrivacyPolicy: true,
     detailContent: {
-      overview: "Prism Chain is a fully offline puzzle game. The app does not collect, store, transmit, or share any personal data. No internet connection is required to play, ensuring complete privacy while you play.",
+      overview: "Prism Chain is a fully offline puzzle game. The app does not collect, store, transmit, or share any personal data. No internet connection is required to play. Optional in-app purchases (crystal packs and cosmetic themes) are processed entirely by Google Play, so complete privacy is maintained while you play.",
       features: [
-        "Complete levels and track high scores",
-        "Earn and spend crystals",
+        "120 levels across 12 worlds",
+        "Daily Challenge and Endless modes",
+        "Earn and spend crystals on hints and power-ups",
+        "Achievements and rotating daily quests",
+        "Cosmetic themes to restyle your board",
         "Game progress saved locally on your device",
         "Fully offline - no internet connection required",
-        "No data collection - complete privacy",
-        "No third-party SDKs or tracking"
+        "Optional in-app purchases (crystal packs and themes) via Google Play"
       ],
       technologies: ["Flutter"],
       privacyPolicy: `Privacy Policy for Prism Chain
 
-Last updated: July 23, 2026
+Last updated: September 22, 2026
 
 Overview
-Prism Chain ("the App") is a fully offline puzzle game. The App does not collect, store, transmit, or share any personal data. No internet connection is required to play.
+Prism Chain ("the App") is a fully offline puzzle game. The App does not collect, store, transmit, or share any personal data. No internet connection is required to play. The App offers optional in-app purchases, which are processed entirely by Google Play (see below).
 
 Data Collection
 The App collects no data whatsoever. No personal information (name, email, address, etc.), no device identifiers (IMEI, advertising ID, etc.), no location data, no usage analytics or crash logs sent off-device, no cookies or tracking technologies, and no third-party SDKs that collect data.
 
 Local Storage
-The App uses SharedPreferences (Android) to save game progress locally on your device — including completed levels, high scores, crystal balance, and settings. This data never leaves your device. You can clear it at any time via your device's App Settings.
+The App uses SharedPreferences (Android) to save game progress locally on your device — including completed levels, high scores, crystal balance, unlocked themes, and settings. This data never leaves your device. You can clear it at any time via your device's App Settings.
+
+In-App Purchases
+The App offers optional in-app purchases, such as crystal packs and cosmetic themes. All payment processing is handled by Google Play Billing. We never see or store your payment details — the App only receives a confirmation that a purchase succeeded so it can grant the item. Google's handling of payment data is governed by Google's own privacy policy.
 
 Third-Party Services
-The App contains no third-party analytics, advertising, crash reporting, or social media SDKs.
+The App contains no third-party analytics, advertising, crash reporting, or social media SDKs. The only third-party component is Google Play Billing, used solely to process optional in-app purchases.
 
 Children's Privacy
-The App does not collect any data from anyone, including children under 13.
+The App does not collect any data from anyone, including children under 13. In-app purchases require Google Play authentication.
 
 Changes to This Policy
 If this policy changes, the "Last updated" date at the top will be revised. Since the App collects no data, any future changes would be minimal and would not affect your privacy negatively.
