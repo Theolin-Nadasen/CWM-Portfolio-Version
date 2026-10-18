@@ -190,9 +190,62 @@ If this policy changes, the "Last updated" date at the top will be revised. Sinc
 Contact
 If you have questions about this privacy policy, please contact us at: theolin.nadasen@gmail.com`
     }
+  },
+  {
+    id: "submora",
+    name: "Submora",
+    description: "An offline subscription tracker for Android. See the real monthly cost of everything you pay for and get a reminder before each renewal - no account, no bank login, no tracking.",
+    image: "/submora_icon.png",
+    tags: ["Finance", "Productivity", "Mobile App", "Android", "Offline"],
+    hasDetailPage: true,
+    hasPrivacyPolicy: true,
+    detailContent: {
+      overview: "Submora is a calm, private subscription tracker. Add each subscription once - streaming, music, cloud storage, software, the gym - and Submora shows the true monthly cost, the yearly total, what renews next, and where the money goes. It works entirely offline: no account, no bank connection, no analytics, and no ads.",
+      features: [
+        "One honest monthly and yearly total",
+        "Upcoming renewals grouped by the next 7 days, 30 days and later",
+        "A local reminder at 9am before each renewal",
+        "Mark a renewal as paid and roll the date forward",
+        "Category breakdown of monthly spend",
+        "Works completely offline - no account, no bank login, no tracking",
+        "Optional one-time Pro unlock for unlimited subscriptions via Google Play"
+      ],
+      technologies: ["Flutter"],
+      privacyPolicy: `Overview
+Submora ("the App") is an offline subscription tracker. You enter your subscriptions manually; the App does not connect to your bank, does not require an account, and does not send your list anywhere. The App offers one optional in-app purchase, processed entirely by Google Play (see below). This policy explains what is stored, where it is stored, and what is not collected.
+
+Data Collection
+The App collects no personal data. There is no analytics, advertising, crash-reporting, or social SDK, and the App makes no network requests of its own. Specifically, the App does not collect your name, email address, phone number, device identifiers, advertising ID, location, contacts, or usage statistics.
+
+What You Enter
+Subscription names, amounts, billing cycles, renewal dates, categories, notes, reminder settings, and your currency choice are stored only in local storage on your device, using Android SharedPreferences. This information never leaves your device. There is no server, no backup service, and no sync.
+
+Notifications
+If you enable reminders, the App schedules local notifications on your device. These are created and delivered by Android on your device; no notification content is sent to us or anyone else. You can turn reminders off in Settings or revoke the notification permission in Android settings at any time.
+
+In-App Purchases
+The App offers one optional one-time purchase ("Submora Pro") that unlocks unlimited subscriptions. Payment is handled entirely by Google Play Billing. We never see or store your payment details, card number, or billing address. The App only receives confirmation from Google Play that the purchase was completed so it can unlock the feature. Google's handling of payment data is governed by Google's own privacy policy. Purchases can be restored on a new installation through Google Play.
+
+Data Retention and Deletion
+All App data lives on your device. You can delete individual subscriptions in the App, or remove all data by clearing the App's storage in Android settings or uninstalling the App. Uninstalling removes the local list permanently; no copy is held by us.
+
+Children's Privacy
+The App is not directed at children and does not knowingly collect information from anyone, including children under 13. In-app purchases require Google Play authentication.
+
+Third-Party Services
+The only third-party component is Google Play Billing, used solely to process the optional purchase. No other third-party services are included.
+
+Changes to This Policy
+If this policy changes, the "Last updated" date will be revised. Material changes will be reflected in an app update.
+
+Contact
+If you have any questions about this privacy policy, please contact us at: theolin.nadasen@gmail.com`
+    }
   }
 ];
 
 export function getProjectById(id: string): Project | undefined {
   return projects.find(project => project.id === id);
 }
+
+
