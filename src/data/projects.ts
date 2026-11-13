@@ -343,6 +343,109 @@ Questions about these Terms? Email theolin.nadasen@gmail.com.`
     }
   },
   {
+    id: "shard-breaker",
+    name: "Shard Breaker",
+    description: "An idle brick breaker you barely have to touch. A neon ship orbits a giant block shape, fires itself, and turns everything it breaks into upgrades - offline, no ads.",
+    image: "/shard_breaker_icon.png",
+    tags: ["Game", "Idle", "Brick Breaker", "Mobile App", "Android", "In-App Purchases"],
+    hasDetailPage: true,
+    hasPrivacyPolicy: true,
+    hasTermsOfService: true,
+    detailContent: {
+      overview: "Shard Breaker is a portrait idle brick breaker. A neon ship orbits a huge block shape, aims and fires on its own, and every block it breaks pays shards that you spend on six upgrades. Clear a shape and a bigger one takes its place; Collapse when the wall gets too slow and trade the run for permanent perks. The game works fully offline, shows no ads, and optional in-app purchases are handled entirely by Google Play.",
+      features: [
+        "24x24 block shapes with a boss every tenth shape",
+        "Six upgrades: Cannon, Autoloader, Split, Pierce, Magnet, Focus",
+        "Collapse to earn cores and permanent perks",
+        "Five ship skins, all cosmetic",
+        "Free daily chest, daily missions and gems",
+        "Keeps earning while you are away",
+        "Fully offline - no internet connection required",
+        "No ads",
+        "Optional in-app purchases via Google Play"
+      ],
+      technologies: ["Flutter", "Flame"],
+      privacyPolicy: `Privacy Policy for Shard Breaker
+
+Last updated: 13 November 2026
+
+Overview
+Shard Breaker ("the App") is a fully offline idle brick breaker. The App does not collect, store, transmit, or share any personal data. No internet connection is required to play. The App offers optional in-app purchases, which are processed entirely by Google Play (see below).
+
+Data Collection
+The App collects no data whatsoever. No personal information (name, email, address, etc.), no device identifiers (IMEI, advertising ID, etc.), no location data, no usage analytics or crash logs sent off-device, no cookies or tracking technologies, and no third-party SDKs that collect data.
+
+Local Storage
+The App uses SharedPreferences (Android) to save game progress locally on your device - including the current shape, shards, module levels, gems, cores, perks, unlocked skins, daily chest and mission state, and audio settings. This data never leaves your device. You can clear it at any time from Settings inside the App or via your device's App Settings.
+
+In-App Purchases
+The App offers optional in-app purchases, such as shard crates, gem crates, core crates, the Founder Pack, and a permanent shard multiplier. All payment processing is handled by Google Play Billing. We never see or store your payment details - the App only receives a confirmation that a purchase succeeded so it can grant the item. Google's handling of payment data is governed by Google's own privacy policy.
+
+Third-Party Services
+The App contains no third-party analytics, advertising, crash reporting, or social media SDKs. The only third-party component is Google Play Billing, used solely to process optional in-app purchases.
+
+Children's Privacy
+The App does not collect any data from anyone, including children under 13. The App is not directed at children. In-app purchases require Google Play authentication.
+
+Changes to This Policy
+If this policy changes, the "Last updated" date at the top will be revised. Since the App collects no data, any future changes would be minimal and would not affect your privacy negatively.
+
+Contact
+If you have questions about this privacy policy, please contact us at: theolin.nadasen@gmail.com`,
+      termsOfService: `Terms of Service for Shard Breaker
+
+Last updated: 13 November 2026
+
+Agreement
+These Terms of Service ("Terms") form an agreement between you and the developer of Shard Breaker ("the App", "we", "us"). By downloading, installing, or using the App you accept these Terms. If you do not agree, please uninstall the App and do not use it.
+
+Who we are
+The App is published by Code With Me, an independent software business operated by Theolin Nadasen in South Africa. You can reach us at theolin.nadasen@gmail.com. Our trader details are those declared to Google Play on our store listing.
+
+Licence to use the App
+We grant you a personal, non-exclusive, non-transferable, revocable licence to install and use the App on devices you own or control, for private, non-commercial entertainment. The App is distributed through Google Play, so Google Play's own terms also apply to your download and use of the store.
+
+The App and its content
+The App is an idle brick breaker with block shapes, bosses, upgrades, permanent perks, ship skins, a daily chest and daily missions. It works fully offline and does not collect personal data. The artwork, audio, game code and text in the App belong to us or are used under licence, and you may not copy, extract, or redistribute them.
+
+In-app purchases
+The App offers optional in-app purchases, such as shard crates, gem crates, core crates, the Founder Pack, and a permanent shard multiplier, processed by Google Play Billing. Prices are shown in the App before you confirm a purchase and are charged to your Google Play payment method. We never see or store your card details. Every purchase grants a known amount or a clearly described item - there are no loot boxes and nothing random is sold.
+
+Refunds
+Refunds are handled by Google Play under its refund policy. Because purchases unlock digital content immediately, your statutory cancellation right may not apply once the content has been delivered. If a purchase fails to deliver an item, contact us and we will put it right.
+
+Virtual items
+Shards, gems, cores, perks and skins are a limited licence to use digital content inside the App. They have no cash value, cannot be exchanged for money, and cannot be transferred, sold, or traded outside the App. Shards and module levels belong to a single run and reset when you Collapse; gems, cores, perks and skins are kept. We may adjust or retire items and features to keep the game fair and working.
+
+Acceptable use
+You agree not to modify, hack, or tamper with the App or its saved progress; not to reverse engineer, decompile, resell, or redistribute the App; and not to use the App for any unlawful purpose.
+
+Progress and data
+Progress, shards, gems, cores, perks and unlocked skins are stored locally on your device. Uninstalling the App, clearing its storage, or losing your device permanently deletes that progress. Purchases are tied to your Google Play account and can be restored where the App supports it.
+
+Availability and changes
+We may update, change, or discontinue the App or any of its features, including shapes, upgrades, perks and cosmetics. We do not guarantee uninterrupted availability or that the App will work on every device.
+
+Disclaimer
+The App is provided "as is" and "as available", without warranties of any kind, whether express or implied, including fitness for a particular purpose. You play at your own risk.
+
+Limitation of liability
+To the maximum extent permitted by law, we are not liable for any indirect, incidental, or consequential loss, or for loss of data, progress, virtual items, profits, or goodwill arising from your use of the App. Nothing in these Terms limits rights you have under mandatory consumer law in your country.
+
+Termination
+You may stop using the App at any time by uninstalling it. We may end your licence if you breach these Terms. The sections on virtual items, disclaimers, liability, and governing law survive termination.
+
+Changes to these Terms
+We may update these Terms when the App or the law changes. The revised version will be posted on this page with a new "Last updated" date. Continuing to use the App after a change means you accept the updated Terms.
+
+Governing law
+These Terms are governed by the laws of the Republic of South Africa. Consumer rights you hold under the law of your own country of residence are not affected.
+
+Contact
+Questions about these Terms? Email theolin.nadasen@gmail.com.`
+    }
+  },
+  {
     id: "submora",
     name: "Submora",
     description: "An offline subscription tracker for Android. See the real monthly cost of everything you pay for and get a reminder before each renewal - no account, no bank login, no tracking.",
