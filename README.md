@@ -69,6 +69,7 @@ Edit `src/data/projects.ts` and add a new project object to the `projects` array
   tags: ["Tag1", "Tag2"],
   hasDetailPage: true,       // Has its own page on this site
   hasPrivacyPolicy: true,    // Optional: includes privacy policy
+  hasTermsOfService: true,   // Optional: includes terms of service
   detailContent: {
     overview: "Detailed description shown on the project page...",
     features: [
@@ -83,6 +84,15 @@ This is the privacy policy content.
 
 Data Collection
 We collect XYZ data for ABC purposes.
+
+Contact
+For questions, email us at...`,
+    termsOfService: `Terms of Service Title
+
+This is the terms of service content.
+
+Licence
+...
 
 Contact
 For questions, email us at...`
@@ -101,7 +111,9 @@ For questions, email us at...`
   tags: ["Tag1", "Tag2"],
   hasDetailPage: true,
   hasPrivacyPolicy: true,
+  hasTermsOfService: true,
   privacyPolicyUrl: "https://myapp.com/privacy",  // External link
+  termsOfServiceUrl: "https://myapp.com/terms",   // External link
   detailContent: {
     overview: "...",
     features: ["..."],
@@ -123,5 +135,8 @@ The site uses a custom black/gold/red theme:
 
 - Images should be placed in the `public/` folder
 - All projects with `hasDetailPage: true` will be accessible at `/projects/:id`
+- Projects with `hasPrivacyPolicy: true` get a policy at `/projects/:id/privacy`
+- Projects with `hasTermsOfService: true` get terms at `/projects/:id/terms`
+  (both are also linked from the project's detail page sidebar)
 - The site is optimized for Netlify deployment (see `netlify.toml`)
 - No backend required - completely static site

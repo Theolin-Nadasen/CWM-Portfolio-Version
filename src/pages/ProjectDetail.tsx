@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ExternalLink, Shield, ChevronRight } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Shield, FileText, ChevronRight } from 'lucide-react';
 import { getProjectById } from '../data/projects';
 
 export default function ProjectDetail() {
@@ -173,6 +173,35 @@ export default function ProjectDetail() {
                     className="inline-flex items-center gap-2 text-gold hover:text-gold-dark transition-colors"
                   >
                     View Privacy Policy
+                    <ArrowLeft className="w-4 h-4 rotate-180" />
+                  </Link>
+                ) : null}
+              </div>
+            )}
+
+            {/* Terms of Service Link */}
+            {project.hasTermsOfService && (
+              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <FileText className="w-6 h-6 text-gold" />
+                  <h3 className="text-lg font-bold text-white">Terms</h3>
+                </div>
+                {project.termsOfServiceUrl ? (
+                  <a
+                    href={project.termsOfServiceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-gold hover:text-gold-dark transition-colors"
+                  >
+                    View Terms of Service
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                ) : project.detailContent?.termsOfService ? (
+                  <Link
+                    to={`/projects/${project.id}/terms`}
+                    className="inline-flex items-center gap-2 text-gold hover:text-gold-dark transition-colors"
+                  >
+                    View Terms of Service
                     <ArrowLeft className="w-4 h-4 rotate-180" />
                   </Link>
                 ) : null}

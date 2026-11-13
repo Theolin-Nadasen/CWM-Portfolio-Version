@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import ProjectPrivacy from './pages/ProjectPrivacy';
+import ProjectTerms from './pages/ProjectTerms';
 import About from './pages/About';
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/projects/:id/privacy" element={<ProjectPrivacy />} />
+        <Route path="/projects/:id/terms" element={<ProjectTerms />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />

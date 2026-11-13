@@ -8,11 +8,14 @@ export interface Project {
   externalUrl?: string;
   hasPrivacyPolicy: boolean;
   privacyPolicyUrl?: string;
+  hasTermsOfService: boolean;
+  termsOfServiceUrl?: string;
   detailContent?: {
     overview: string;
     features: string[];
     technologies: string[];
     privacyPolicy?: string;
+    termsOfService?: string;
   };
 }
 
@@ -25,7 +28,8 @@ export const projects: Project[] = [
     tags: ["PDF", "Design", "Tools", "Web App"],
     hasDetailPage: false,
     externalUrl: "https://pdf.codewithme.co.za",
-    hasPrivacyPolicy: false
+    hasPrivacyPolicy: false,
+    hasTermsOfService: false
   },
   {
     id: "pdf-merge-split-delete",
@@ -35,6 +39,7 @@ export const projects: Project[] = [
     tags: ["PDF", "Tools", "Offline", "Mobile App"],
     hasDetailPage: true,
     hasPrivacyPolicy: true,
+    hasTermsOfService: true,
     detailContent: {
       overview: "PDF Merge Split Delete is a lightweight, offline mobile application that lets you manipulate PDF files without uploading them to any server. Merge multiple PDFs into one, split a PDF into separate files, or delete unwanted pages - all locally on your device.",
       features: [
@@ -69,7 +74,52 @@ Changes to This Privacy Policy
 We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.
 
 Contact Us
-If you have any questions about this Privacy Policy or our practices, please contact us at: theolin.nadasen@gmail.com`
+If you have any questions about this Privacy Policy or our practices, please contact us at: theolin.nadasen@gmail.com`,
+      termsOfService: `Terms of Service for PDF Merge Split Delete
+
+Last updated: 13 November 2026
+
+Agreement
+These Terms of Service ("Terms") form an agreement between you and the developer of PDF Merge Split Delete ("the App", "we", "us"). By downloading, installing, or using the App you accept these Terms. If you do not agree with them, please uninstall the App and do not use it.
+
+Who we are
+The App is published by Code With Me, an independent software business operated by Theolin Nadasen in South Africa. You can reach us at theolin.nadasen@gmail.com. Our trader details are those declared to Google Play on our store listing.
+
+Licence to use the App
+We grant you a personal, non-exclusive, non-transferable, revocable licence to install and use the App on devices you own or control, for private, non-commercial use. The App is distributed through Google Play, so Google Play's own terms also apply to your download and use of the store.
+
+What the App does
+The App merges, splits, and deletes pages in PDF files. All processing happens locally on your device. The App does not upload your documents anywhere and does not require an internet connection.
+
+Your documents
+You keep all rights to the documents you process. You confirm that you have the right to open, modify, and save the files you use with the App, and that you will not use the App to alter documents you are not authorised to alter. You are responsible for keeping backups: keep the original files until you have checked the output. We cannot recover documents that you overwrite or delete.
+
+Acceptable use
+You agree not to reverse engineer, decompile, resell, sublicense, or redistribute the App; not to remove or alter any copyright or branding notices; and not to use the App for any unlawful purpose, including handling documents in breach of copyright, privacy, or confidentiality obligations.
+
+No fees
+The App is free to download and use. It contains no advertising, no subscriptions, and no in-app purchases.
+
+Availability and changes
+We may release updates, change features, or discontinue the App. We do not guarantee that the App will work with every version of Android or with every PDF file. Some documents, such as password-protected or heavily encrypted files, may not be supported.
+
+Disclaimer
+The App is provided "as is" and "as available", without warranties of any kind, whether express or implied, including fitness for a particular purpose or that the output will be free of errors. You use the App at your own risk.
+
+Limitation of liability
+To the maximum extent permitted by law, we are not liable for any indirect, incidental, or consequential loss, or for loss of data, documents, profits, or goodwill arising from your use of the App. Nothing in these Terms limits rights you have under mandatory consumer law in your country.
+
+Termination
+You may stop using the App at any time by uninstalling it. We may end the licence if you breach these Terms. The sections on your documents, disclaimers, liability, and governing law survive termination.
+
+Changes to these Terms
+We may update these Terms when the App or the law changes. The revised version will be posted on this page with a new "Last updated" date. Continuing to use the App after a change means you accept the updated Terms.
+
+Governing law
+These Terms are governed by the laws of the Republic of South Africa. Consumer rights you hold under the law of your own country of residence are not affected.
+
+Contact
+Questions about these Terms? Email theolin.nadasen@gmail.com.`
     }
   },
   {
@@ -80,6 +130,7 @@ If you have any questions about this Privacy Policy or our practices, please con
     tags: ["Game", "Mobile App", "Android", "In-App Purchases"],
     hasDetailPage: true,
     hasPrivacyPolicy: true,
+    hasTermsOfService: true,
     detailContent: {
       overview: "Card Squads is an engaging mobile card game where players collect unique cards, build powerful squads, and battle through energy-based gameplay. Available on Google Play Store with in-app purchases for gems and energy refills.",
       features: [
@@ -138,7 +189,55 @@ Contact Us
 If you have any questions about this Privacy Policy, please contact us at: theolin.nadasen@gmail.com
 
 Consent
-By using Card Squads, you consent to our Privacy Policy and agree to its terms.`
+By using Card Squads, you consent to our Privacy Policy and agree to its terms.`,
+      termsOfService: `Terms of Service for Card Squads
+
+Last updated: 13 November 2026
+
+Agreement
+These Terms of Service ("Terms") form an agreement between you and the developer of Card Squads ("the App", "we", "us"). By downloading, installing, or using the App you accept these Terms. If you do not agree, please uninstall the App and do not use it.
+
+Who we are
+The App is published by Code With Me, an independent software business operated by Theolin Nadasen in South Africa. You can reach us at theolin.nadasen@gmail.com. Our trader details are those declared to Google Play on our store listing.
+
+Licence to use the App
+We grant you a personal, non-exclusive, non-transferable, revocable licence to install and use the App on devices you own or control, for private, non-commercial entertainment. The App is distributed through Google Play, so Google Play's own terms also apply to your download and use of the store.
+
+In-app purchases
+The App offers optional in-app purchases, such as gem bundles and energy refills, processed by Google Play Billing. Prices are shown in the App before you confirm a purchase and are charged to your Google Play payment method. We never see or store your card details.
+
+Refunds
+Refunds are handled by Google Play under its refund policy. Because purchases unlock digital content immediately, your statutory cancellation right may not apply once the content has been delivered. If a purchase fails to deliver an item, contact us and we will put it right.
+
+Virtual items
+Gems, energy, cards, and other in-game items are a limited licence to use digital content inside the App. They have no cash value, cannot be exchanged for money, and cannot be transferred, sold, or traded outside the App. We may adjust, rebalance, or retire items and features to keep the game fair and working.
+
+Fair play
+You agree not to modify, hack, cheat, or use third-party tools to alter the App or its economy; not to reverse engineer or redistribute the App; and not to use the App for any unlawful purpose or in a way that harms other players.
+
+Progress and data
+Game progress, cards, and gem balances are stored locally on your device. Uninstalling the App, clearing its storage, or losing your device may permanently delete that progress. Purchases are tied to your Google Play account and can be restored through Google Play where the App supports it.
+
+Availability and changes
+We may update, change, or discontinue the App or any of its features, including game modes, cards, and events. We do not guarantee uninterrupted availability or that the App will work on every device.
+
+Disclaimer
+The App is provided "as is" and "as available", without warranties of any kind, whether express or implied, including fitness for a particular purpose. You play at your own risk.
+
+Limitation of liability
+To the maximum extent permitted by law, we are not liable for any indirect, incidental, or consequential loss, or for loss of data, progress, virtual items, profits, or goodwill arising from your use of the App. Nothing in these Terms limits rights you have under mandatory consumer law in your country.
+
+Termination
+You may stop using the App at any time by uninstalling it. We may suspend or end your licence if you breach these Terms, including by cheating or tampering with the App. The sections on virtual items, disclaimers, liability, and governing law survive termination.
+
+Changes to these Terms
+We may update these Terms when the App or the law changes. The revised version will be posted on this page with a new "Last updated" date. Continuing to use the App after a change means you accept the updated Terms.
+
+Governing law
+These Terms are governed by the laws of the Republic of South Africa. Consumer rights you hold under the law of your own country of residence are not affected.
+
+Contact
+Questions about these Terms? Email theolin.nadasen@gmail.com.`
     }
   },
   {
@@ -149,6 +248,7 @@ By using Card Squads, you consent to our Privacy Policy and agree to its terms.`
     tags: ["Game", "Puzzle", "Mobile App", "Android", "In-App Purchases"],
     hasDetailPage: true,
     hasPrivacyPolicy: true,
+    hasTermsOfService: true,
     detailContent: {
       overview: "Prism Chain is a fully offline puzzle game. The app does not collect, store, transmit, or share any personal data. No internet connection is required to play. Optional in-app purchases (crystal packs and cosmetic themes) are processed entirely by Google Play, so complete privacy is maintained while you play.",
       features: [
@@ -188,7 +288,58 @@ Changes to This Policy
 If this policy changes, the "Last updated" date at the top will be revised. Since the App collects no data, any future changes would be minimal and would not affect your privacy negatively.
 
 Contact
-If you have questions about this privacy policy, please contact us at: theolin.nadasen@gmail.com`
+If you have questions about this privacy policy, please contact us at: theolin.nadasen@gmail.com`,
+      termsOfService: `Terms of Service for Prism Chain
+
+Last updated: 13 November 2026
+
+Agreement
+These Terms of Service ("Terms") form an agreement between you and the developer of Prism Chain ("the App", "we", "us"). By downloading, installing, or using the App you accept these Terms. If you do not agree, please uninstall the App and do not use it.
+
+Who we are
+The App is published by Code With Me, an independent software business operated by Theolin Nadasen in South Africa. You can reach us at theolin.nadasen@gmail.com. Our trader details are those declared to Google Play on our store listing.
+
+Licence to use the App
+We grant you a personal, non-exclusive, non-transferable, revocable licence to install and use the App on devices you own or control, for private, non-commercial entertainment. The App is distributed through Google Play, so Google Play's own terms also apply to your download and use of the store.
+
+The App and its content
+The App is a puzzle game with levels, daily challenges, endless mode, achievements, and cosmetic themes. It works fully offline and does not collect personal data. The levels, artwork, music, and code in the App belong to us or are used under licence, and you may not copy, extract, or redistribute them.
+
+In-app purchases
+The App offers optional in-app purchases, such as crystal packs and cosmetic themes, processed by Google Play Billing. Prices are shown in the App before you confirm a purchase and are charged to your Google Play payment method. We never see or store your card details.
+
+Refunds
+Refunds are handled by Google Play under its refund policy. Because purchases unlock digital content immediately, your statutory cancellation right may not apply once the content has been delivered. If a purchase fails to deliver an item, contact us and we will put it right.
+
+Virtual items
+Crystals, power-ups, hints, and cosmetic themes are a limited licence to use digital content inside the App. They have no cash value, cannot be exchanged for money, and cannot be transferred, sold, or traded outside the App. We may adjust or retire items and features to keep the game fair and working.
+
+Acceptable use
+You agree not to modify, hack, or tamper with the App or its saved progress; not to reverse engineer, decompile, resell, or redistribute the App; and not to use the App for any unlawful purpose.
+
+Progress and data
+Progress, high scores, crystal balance, and unlocked themes are stored locally on your device. Uninstalling the App, clearing its storage, or losing your device permanently deletes that progress. Purchases are tied to your Google Play account and can be restored where the App supports it.
+
+Availability and changes
+We may update, change, or discontinue the App or any of its features, including levels, modes, and themes. We do not guarantee uninterrupted availability or that the App will work on every device.
+
+Disclaimer
+The App is provided "as is" and "as available", without warranties of any kind, whether express or implied, including fitness for a particular purpose. You play at your own risk.
+
+Limitation of liability
+To the maximum extent permitted by law, we are not liable for any indirect, incidental, or consequential loss, or for loss of data, progress, virtual items, profits, or goodwill arising from your use of the App. Nothing in these Terms limits rights you have under mandatory consumer law in your country.
+
+Termination
+You may stop using the App at any time by uninstalling it. We may end your licence if you breach these Terms. The sections on virtual items, disclaimers, liability, and governing law survive termination.
+
+Changes to these Terms
+We may update these Terms when the App or the law changes. The revised version will be posted on this page with a new "Last updated" date. Continuing to use the App after a change means you accept the updated Terms.
+
+Governing law
+These Terms are governed by the laws of the Republic of South Africa. Consumer rights you hold under the law of your own country of residence are not affected.
+
+Contact
+Questions about these Terms? Email theolin.nadasen@gmail.com.`
     }
   },
   {
@@ -199,6 +350,7 @@ If you have questions about this privacy policy, please contact us at: theolin.n
     tags: ["Finance", "Productivity", "Mobile App", "Android", "Offline"],
     hasDetailPage: true,
     hasPrivacyPolicy: true,
+    hasTermsOfService: true,
     detailContent: {
       overview: "Submora is a calm, private subscription tracker. Add each subscription once - streaming, music, cloud storage, software, the gym - and Submora shows the true monthly cost, the yearly total, what renews next, and where the money goes. It works entirely offline: no account, no bank connection, no analytics, and no ads.",
       features: [
@@ -239,7 +391,58 @@ Changes to This Policy
 If this policy changes, the "Last updated" date will be revised. Material changes will be reflected in an app update.
 
 Contact
-If you have any questions about this privacy policy, please contact us at: theolin.nadasen@gmail.com`
+If you have any questions about this privacy policy, please contact us at: theolin.nadasen@gmail.com`,
+      termsOfService: `Terms of Service for Submora
+
+Last updated: 13 November 2026
+
+Agreement
+These Terms of Service ("Terms") form an agreement between you and the developer of Submora ("the App", "we", "us"). By downloading, installing, or using the App you accept these Terms. If you do not agree, please uninstall the App and do not use it.
+
+Who we are
+The App is published by Code With Me, an independent software business operated by Theolin Nadasen in South Africa. You can reach us at theolin.nadasen@gmail.com. Our trader details are those declared to Google Play on our store listing.
+
+Licence to use the App
+We grant you a personal, non-exclusive, non-transferable, revocable licence to install and use the App on devices you own or control, for private, non-commercial use. The App is distributed through Google Play, so Google Play's own terms also apply to your download and use of the store.
+
+What the App does
+Submora is an offline subscription tracker. You add your subscriptions manually, and the App calculates monthly and yearly totals, groups upcoming renewals, and can remind you before a renewal date. The App does not connect to your bank, does not require an account, and does not send your list anywhere.
+
+Not financial advice
+The App is a record-keeping tool, not a financial, tax, or legal adviser. Totals, conversions, and reminders are based only on what you enter, so their accuracy depends on your entries. Nothing in the App is financial advice, and you remain responsible for your own subscriptions, payments, and cancellations. Always confirm renewal dates and amounts with the service provider.
+
+Reminders
+Renewal reminders are local notifications scheduled by Android on your device. They can be delayed or suppressed by battery optimisation, do not-disturb settings, device restarts, or a revoked notification permission, so do not rely on them as your only reminder.
+
+Your data
+Everything you enter is stored locally on your device. We hold no copy, so we cannot recover your list if you clear the App's storage, uninstall the App, or lose your device. Keep your own record of anything important.
+
+In-app purchases
+The App offers one optional one-time purchase, "Submora Pro", which unlocks unlimited subscriptions. It is processed by Google Play Billing, and prices are shown in the App before you confirm. We never see or store your payment details. Refunds are handled by Google Play under its refund policy. Because the purchase unlocks digital content immediately, your statutory cancellation right may not apply once it has been delivered. Purchases can be restored on a new installation through Google Play.
+
+Acceptable use
+You agree not to modify, hack, or tamper with the App; not to reverse engineer, decompile, resell, or redistribute it; and not to use it for any unlawful purpose.
+
+Availability and changes
+We may update, change, or discontinue the App or any of its features. We do not guarantee uninterrupted availability or that the App will work on every device or Android version.
+
+Disclaimer
+The App is provided "as is" and "as available", without warranties of any kind, whether express or implied, including fitness for a particular purpose or that calculations and reminders will be free of error. You use the App at your own risk.
+
+Limitation of liability
+To the maximum extent permitted by law, we are not liable for any indirect, incidental, or consequential loss, including missed renewals, missed cancellations, unexpected charges, or loss of data, profits, or goodwill arising from your use of the App. Nothing in these Terms limits rights you have under mandatory consumer law in your country.
+
+Termination
+You may stop using the App at any time by uninstalling it. We may end your licence if you breach these Terms. The sections on your data, disclaimers, liability, and governing law survive termination.
+
+Changes to these Terms
+We may update these Terms when the App or the law changes. The revised version will be posted on this page with a new "Last updated" date. Continuing to use the App after a change means you accept the updated Terms.
+
+Governing law
+These Terms are governed by the laws of the Republic of South Africa. Consumer rights you hold under the law of your own country of residence are not affected.
+
+Contact
+Questions about these Terms? Email theolin.nadasen@gmail.com.`
     }
   }
 ];
